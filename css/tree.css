@@ -1,0 +1,94 @@
+html {
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.tree-root {
+	/*background: yellow; */
+}
+.tree-ul {
+	padding-inline-start: 15px;
+	max-width: fit-content;
+}
+
+.tree-li {
+	list-style-type: none;
+    background: #dcdcf37d;
+    margin: 10px;
+    max-width: fit-content;
+    padding: 6px;
+
+}
+
+.tree-li-terminal .tree-node-div {
+    background: #e3717d;
+}
+
+.tree-node-div {
+    max-width: 100px;
+    padding: 8px;
+    background: aliceblue;
+    cursor: pointer;
+}
+
+.tree-node-div:hover {
+    background: #b9c2ca;
+    transition: linear 300ms;
+}
+
+.tree-node-label {
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 71px;
+	display: inline-block;
+}
+
+.node-Func-Btn {
+	width: 21px;
+    height: 21px;
+    display: inline-block;
+    background-image: url(../image/option.png);
+    background-repeat: round;
+}
+
+.m-fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 700ms, opacity 700ms;
+}
+.m-fadeIn {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 700ms;
+}
+.tree-options-div, .tree-options-div-add-option, .tree-options-div-terminal {
+	position: absolute;
+}
+.tree-options-div-arrow {
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-right: 12px solid red;
+    border-bottom: 9px solid transparent;
+    position: absolute;
+    top: 4rem;
+}
+
+.tree-options-div-content {
+    position: absolute;
+    list-style: none;
+    margin-left: 12px;
+    padding: 10px;
+    background: #b8ddddbd;
+    border-radius: 0px 10px;
+}
+.tree-options-div-content li {
+    background: #94c4dfa8;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 0px 10px;
+}
+.tree-options-div-content li {
+	cursor: pointer;
+}
